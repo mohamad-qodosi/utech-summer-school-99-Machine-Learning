@@ -1,1 +1,1 @@
-# utech-summer-school-99-Machine-Learning
+# Machine Learning Course in utech academy - summer school 1399
