@@ -1,16 +1,16 @@
 digraph Tree {
 node [shape=box, style="filled", color="black"] ;
-0 [label="Age <= 42.5\nentropy = 0.934\nsamples = 320\nvalue = [208, 112]\nclass = False", fillcolor="#f3c5a4"] ;
-1 [label="EstimatedSalary <= 89500.0\nentropy = 0.628\nsamples = 229\nvalue = [193, 36]\nclass = False", fillcolor="#ea995e"] ;
+0 [label="Age <= 42.5\ngini = 0.449\nsamples = 320\nvalue = [211, 109]\nclass = P", fillcolor="#f2c29f"] ;
+1 [label="EstimatedSalary <= 90500.0\ngini = 0.271\nsamples = 235\nvalue = [197, 38]\nclass = P", fillcolor="#ea995f"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="entropy = 0.201\nsamples = 192\nvalue = [186, 6]\nclass = False", fillcolor="#e6853f"] ;
+2 [label="gini = 0.059\nsamples = 196\nvalue = [190, 6]\nclass = P", fillcolor="#e6853f"] ;
 1 -> 2 ;
-3 [label="entropy = 0.7\nsamples = 37\nvalue = [7, 30]\nclass = True", fillcolor="#67b4eb"] ;
+3 [label="gini = 0.295\nsamples = 39\nvalue = [7, 32]\nclass = nP", fillcolor="#64b2eb"] ;
 1 -> 3 ;
-4 [label="Age <= 46.5\nentropy = 0.646\nsamples = 91\nvalue = [15, 76]\nclass = True", fillcolor="#60b0ea"] ;
+4 [label="Age <= 46.5\ngini = 0.275\nsamples = 85\nvalue = [14, 71]\nclass = nP", fillcolor="#60b0ea"] ;
 0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
-5 [label="entropy = 0.982\nsamples = 19\nvalue = [8, 11]\nclass = True", fillcolor="#c9e4f8"] ;
+5 [label="gini = 0.455\nsamples = 20\nvalue = [7, 13]\nclass = nP", fillcolor="#a4d2f3"] ;
 4 -> 5 ;
-6 [label="entropy = 0.46\nsamples = 72\nvalue = [7, 65]\nclass = True", fillcolor="#4ea8e8"] ;
+6 [label="gini = 0.192\nsamples = 65\nvalue = [7, 58]\nclass = nP", fillcolor="#51a9e8"] ;
 4 -> 6 ;
 }
